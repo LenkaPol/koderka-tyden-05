@@ -41,3 +41,32 @@ a:hover {
 	background-color: #e74c3c;
 	color: white;
 }
+li {
+	list-style-type: none;
+	text-align: center;
+	margin-bottom: 2px;
+}
+ul {
+	padding: 0;
+	margin: 20px 0 0 0;
+}
+@media screen and (min-width: 640px) {
+	ul {
+		display: flex;
+	}
+	li {
+		flex: 1 1 25%;
+		margin-right: 2px;
+		margin-bottom: 0;
+	}
+}
+@media screen and (min-width: 1000px) {
+	.hlavicka {
+		display: flex;
+		justify-content: space-between;
+		align-items: baseline;
+	}
+	ul {
+		margin: 0;
+	}
+}
